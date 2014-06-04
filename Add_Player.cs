@@ -9,18 +9,16 @@ using System.Windows.Forms;
 
 namespace BBStats
 {
-    public partial class Games_Screen : Form
+    public partial class Add_Player : Form
     {
-        public Games_Screen()
+        public Add_Player()
         {
             InitializeComponent();
         }
 
-        private void Games_Screen_Load(object sender, EventArgs e)
+        private void player_add_button_Click(object sender, EventArgs e)
         {
-
+            
         }
-
-        
     }
 }

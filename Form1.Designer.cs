@@ -32,6 +32,7 @@
             this.password_Box = new System.Windows.Forms.TextBox();
             this.Go_Button = new System.Windows.Forms.Button();
             this.userName_box = new System.Windows.Forms.TextBox();
+            this.Add_Player = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Games_Screen_Button
@@ -69,11 +70,22 @@
             this.userName_box.Size = new System.Drawing.Size(100, 20);
             this.userName_box.TabIndex = 3;
             // 
+            // Add_Player
+            // 
+            this.Add_Player.Location = new System.Drawing.Point(3, 355);
+            this.Add_Player.Name = "Add_Player";
+            this.Add_Player.Size = new System.Drawing.Size(75, 23);
+            this.Add_Player.TabIndex = 4;
+            this.Add_Player.Text = "Add Player";
+            this.Add_Player.UseVisualStyleBackColor = true;
+            this.Add_Player.Click += new System.EventHandler(this.Add_Player_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 470);
+            this.Controls.Add(this.Add_Player);
             this.Controls.Add(this.userName_box);
             this.Controls.Add(this.Go_Button);
             this.Controls.Add(this.password_Box);
@@ -92,6 +104,7 @@
         private System.Windows.Forms.TextBox password_Box;
         private System.Windows.Forms.Button Go_Button;
         private System.Windows.Forms.TextBox userName_box;
+        private System.Windows.Forms.Button Add_Player;
     }
 }
 

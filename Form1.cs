@@ -38,5 +38,13 @@ namespace BBStats
             db.insertGame(123456, DateTime.Now.ToString("M/d/yyyy"), userName_box.Text, 5, 8);
             
         }
+
+        private void Add_Player_Click(object sender, EventArgs e)
+        {
+            Add_Player addPlayer = new Add_Player();
+            addPlayer.Show();
+        }
+
+        
     }
 }

@@ -88,11 +88,11 @@ namespace BBStats
 
         }
 
-        public void insertGame(int gameID, string date, string opponent, int runsfor, int runsAgainst)
+        public void insertGame(int gameID, string opponent, int runsfor, int runsAgainst)
         {
 
 
-            string query = "INSERT INTO GamesPlayed VALUES(" + gameID + "," + date + ",'" + opponent + "'," + runsfor + "," + runsAgainst +")";
+            string query = "INSERT INTO Games VALUES(" + gameID + "," + opponent + "'," + runsfor + "," + runsAgainst +")";
 
             if (this.openConnection()==true){
 
@@ -105,6 +105,27 @@ namespace BBStats
             }
 
         }
+
+        public void insertPlayer(int firstName, string lastName, string PID)
+        {
+
+
+            string query = "INSERT INTO Players VALUES(" + firstName + "," + lastName + "," + PID + ")";
+
+            if (this.openConnection() == true)
+            {
+
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.ExecuteNonQuery();
+
+                this.closeConnection();
+
+            }
+
+        }
+
+
 
         public void deleteGame(int gameCode)
         {
